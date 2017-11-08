@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="116dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/foto_plato_item"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/imagen"
+                android:background="@drawable/caja_imagen_lista_platos"
+                android:cropToPadding="true"
+                android:adjustViewBounds="false" />
+
+            <TextView
+                android:id="@+id/precioPlato_plato_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="999,99E"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                tools:ignore="HardcodedText"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/categoria_redonda"
+                android:id="@+id/img_categoria_redonda"
+                android:layout_weight="0.25"
+                tools:ignore="ContentDescription,RtlSymmetry"
+                android:tint="@color/azul_claro"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingEnd="1dp" />
+
+            <TextView
+                android:id="@+id/nombrePlato_plato_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Lasaña Boloñesa"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:layout_weight="6"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descripcion_plato_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Una lasaña muy normal con una descripcion tremendamente e innecesariamente larga para cubrir el mayor texto posible"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

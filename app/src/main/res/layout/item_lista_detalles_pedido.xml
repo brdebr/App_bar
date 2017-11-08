@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="3dp"
+    android:gravity="center_vertical"
+    android:background="@color/gris_clarito"
+    android:id="@+id/percent_layout_item_detalles_pedido_">
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nombre_plato_item_lista_detalles_pedido"
+        app:layout_widthPercent="52%"
+        android:paddingStart="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="##"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="13%"
+        android:id="@+id/txt_cantidad_plato_item_lista_detalles_pedido"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txt_total_plato_item_lista_detalles_pedido" />
+
+    <TextView
+        android:text="###,##"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_precio_plato_item_lista_detalles_pedido"
+        app:layout_widthPercent="20%"
+        android:paddingEnd="4dp"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="textEnd"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txt_cantidad_plato_item_lista_detalles_pedido" />
+
+    <TextView
+        android:text="###,##"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="25%"
+        android:gravity="end"
+        android:id="@+id/txt_total_plato_item_lista_detalles_pedido"
+        android:paddingEnd="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="textEnd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</android.support.percent.PercentRelativeLayout>

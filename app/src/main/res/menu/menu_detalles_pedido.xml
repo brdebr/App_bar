@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grupo1_menu_detalles_pedido">
+
+        <item
+            android:title="Ocultar entreg."
+            app:showAsAction="never"
+            android:checkable="true"
+            ></item>
+        <item
+            android:title="@string/comensales"
+            app:showAsAction="never"
+            ></item>
+        <item
+            android:title="@string/notas"
+            app:showAsAction="never"
+            ></item>
+    </group>
+    <group android:id="@+id/grupo2_menu_detalles_pedido">
+        <item
+            android:title="@string/archivar"
+            app:showAsAction="never"
+            ></item>
+        <item
+            android:title="@string/pedir_cuenta"
+            app:showAsAction="never"
+            ></item>
+        <item
+            android:title="@string/cobrado"
+            app:showAsAction="never"
+            android:checkable="true"
+            ></item>
+    </group>
+
+
+</menu>

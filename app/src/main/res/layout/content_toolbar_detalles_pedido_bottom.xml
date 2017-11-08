@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="7dp"
+    android:paddingBottom="2dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="B.I."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/txt_bi_bottom_detalles_pedido"
+        />
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="I.V.A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/txt_iva_bottom_detalles_pedido"
+        android:layout_toRightOf="@id/txt_bi_bottom_detalles_pedido"/>
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TOTAL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/txt_total_bottom_detalles_pedido"
+        android:layout_toRightOf="@id/txt_iva_bottom_detalles_pedido"/>"/>
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="###,## €"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:id="@+id/txt_vbi_bottom_detalles_pedido"
+        android:layout_below="@id/txt_bi_bottom_detalles_pedido"
+        />
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="##,## €"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:id="@+id/txt_viva_bottom_detalles_pedido"
+        android:layout_below="@id/txt_iva_bottom_detalles_pedido"
+        android:layout_toRightOf="@id/txt_vbi_bottom_detalles_pedido"/>
+    <TextView
+        app:layout_widthPercent="25%"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="###,## €"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:id="@+id/txt_vtotal_bottom_detalles_pedido"
+        android:layout_below="@id/txt_total_bottom_detalles_pedido"
+        android:layout_toRightOf="@id/txt_viva_bottom_detalles_pedido"/>
+</android.support.percent.PercentRelativeLayout>
+
+

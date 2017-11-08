@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_lista_pedidos"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/caja_pedido_cuadrada_oscura"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/frame_mesa_item_lista_pedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="20%"
+        android:background="@drawable/caja_pedido_cuadrada_oscura">
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/mesa"
+            android:id="@+id/label_mesa_pedidos"
+            android:textAlignment="center"
+            android:labelFor="@+id/txt_mesa_lista_pedidos"
+
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center_horizontal|top"/>
+
+
+        <EditText
+            android:id="@+id/txt_mesa_lista_pedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:ems="9"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:maxLength="3"
+            android:layout_gravity="center_horizontal|bottom"/>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/img_comensales_lista_pedidos"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/frame_mesa_item_lista_pedidos"
+        android:scaleType="fitCenter"
+        app:layout_widthPercent="20%"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/txt_comensales_lista_pedidos"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_comensales_lista_pedidos"
+        android:layout_toEndOf="@id/frame_mesa_item_lista_pedidos"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="5"
+        app:layout_widthPercent="20%"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/img_platos_lista_pedidos"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/img_comensales_lista_pedidos"
+        android:scaleType="fitCenter"
+        app:layout_widthPercent="20%"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/carta3" />
+
+
+    <TextView
+        android:id="@+id/txt_platos_lista_pedidos"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_comensales_lista_pedidos"
+        android:layout_toEndOf="@id/img_comensales_lista_pedidos"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="3/9"
+        app:layout_widthPercent="20%"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/img_bebidas_lista_pedidos"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/img_platos_lista_pedidos"
+        android:scaleType="fitCenter"
+        app:layout_widthPercent="20%"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/tea" />
+
+    <TextView
+        android:id="@+id/txt_bebidas_lista_pedidos"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_comensales_lista_pedidos"
+        android:layout_toEndOf="@id/txt_platos_lista_pedidos"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="4/8"
+        app:layout_widthPercent="20%"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/img_cobrado_lista_pedidos"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/img_bebidas_lista_pedidos"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:paddingBottom="2dp"
+        android:scaleType="fitCenter"
+        app:layout_widthPercent="20%"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/money" />
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_cobrado_lista_pedidos"
+        android:layout_toEndOf="@+id/img_bebidas_lista_pedidos"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_widthPercent="20%">
+
+        <CheckBox
+            android:id="@+id/txt_cobrado_lista_pedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

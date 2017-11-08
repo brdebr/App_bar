@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout_carta_platos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="brdebr.bryan.app_bar.Activities.Lista_platos">
+
+    <fragment
+        android:id="@+id/fragment_lista_platos"
+        android:name="brdebr.bryan.app_bar.Activities.Fragments.Fragment_lista_platos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_lista_platos" />
+    <!-- The navigation drawer -->
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_categorias" />
+
+            <ListView
+                android:id="@+id/lista_categorias_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/caja_texto_cuadrada_oscura"
+                android:padding="2dp"
+                android:choiceMode="singleChoice"
+                android:divider="@color/azul_oscuro"
+                android:dividerHeight="2dp" />
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>

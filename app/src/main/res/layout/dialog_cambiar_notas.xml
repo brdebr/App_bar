@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    android:gravity="center">
+
+    <EditText
+        app:layout_widthPercent="90%"
+        android:layout_height="240dp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:background="@drawable/caja_texto_cuadrada"
+        android:minLines="10"
+        android:maxLines="10"
+        android:gravity="top|left"
+        android:lines="10"
+        android:padding="9dp"
+        android:id="@+id/edit_notas_cambiar_detalles_pedido" />
+
+</android.support.percent.PercentRelativeLayout>

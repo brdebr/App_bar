@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog_confirmar_desconexion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="brdebr.bryan.app_bar.Auxiliares.Dialog_confirmar_desconexion">
+
+    <TextView
+        android:text="Desconectarse del servidor ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_dialog_confirmar_desconexion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+        android:textColor="@color/negro" />
+
+    <Button
+        android:text="Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancelar_desconexion"
+        android:layout_below="@+id/txt_dialog_confirmar_desconexion"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirmar_desconexion"
+        android:layout_below="@+id/txt_dialog_confirmar_desconexion"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

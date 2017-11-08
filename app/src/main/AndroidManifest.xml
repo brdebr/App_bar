@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="brdebr.bryan.app_bar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--//TODO quitar el "largeHeap" y en su lugar codificar la imagen por trocitos-->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MenuPrincipal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Lista_platos" />
+        <activity android:name=".Activities.Lista_platos_seleccionables" />
+        <activity android:name=".Activities.Detalles_Plato" />
+        <activity android:name=".Activities.Anadir_Plato" />
+        <activity android:name=".Auxiliares.ColorChooser" />
+        <activity
+            android:name=".Activities.Detalles_Conexion"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.Lista_Pedidos"
+            android:label="@string/title_activity_lista__pedidos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Detalles_Pedido"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Auxiliares.Dialog_confirmar_desconexion"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:label="GestiBar"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"/>
+    </application>
+
+</manifest>

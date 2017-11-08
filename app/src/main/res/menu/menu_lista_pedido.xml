@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Ordenar"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:title="Ascendente"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:title="Mesa"
+                        android:id="@+id/menu_ord_asc_mesa"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Comensales"
+                        android:id="@+id/menu_ord_asc_comens"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Cobrado"
+                        android:id="@+id/menu_ord_asc_cobrad"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Creación"
+                        android:id="@+id/menu_ord_asc_fecha"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+            <item
+                android:title="Descendente"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:title="Mesa"
+                        android:id="@+id/menu_ord_desc_mesa"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Comensales"
+                        android:id="@+id/menu_ord_desc_comens"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Cobrado"
+                        android:id="@+id/menu_ord_desc_cobrad"
+                        app:showAsAction="never" />
+                    <item
+                        android:title="Creación"
+                        android:id="@+id/menu_ord_desc_fecha"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+    <item
+        android:title="Mostar todos"
+        android:id="@+id/menu_lista_pedidos_mostrar_todos"
+        android:checkable="true"
+        android:checked="false"
+        app:showAsAction="never"></item>
+    <item
+        android:title="@string/notas"
+        android:id="@+id/menu_aux_notas"
+        app:showAsAction="never"></item>
+
+
+</menu>

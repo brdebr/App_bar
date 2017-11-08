@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:id="@+id/menu_carta_mostrar_todo"
+    android:title="@string/mostrar_todos"
+    android:icon="@drawable/mostrar_todo32"
+    app:showAsAction="ifRoom"
+    ></item>
+    <item
+        android:id="@+id/menu_carta_añadir_plato"
+        android:title="@string/añadir_plato"
+        android:icon="@drawable/add_circle"
+        app:showAsAction="ifRoom"
+        ></item>
+
+
+</menu>

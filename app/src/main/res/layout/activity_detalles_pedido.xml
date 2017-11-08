@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="brdebr.bryan.app_bar.Activities.Detalles_Pedido">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/content_toolbar_detalles_pedido"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_detalles_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingTop="3dp"
+            android:gravity="center_vertical"
+            android:id="@+id/linear_layout_cabecera_detalles_pedido">
+
+            <TextView
+                android:text="@string/nombre_plato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cabecera_nombre_plato_item_lista_detalles_pedido"
+                android:layout_weight="8"
+                android:paddingStart="4dp" />
+
+            <TextView
+                android:text="@string/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cabecera_precio_plato_item_lista_detalles_pedido"
+                android:layout_weight="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="@string/cantidad_abrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cabecera_cantidad_plato_item_lista_detalles_pedido"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp" />
+
+            <TextView
+                android:text="@string/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cabecera_total_plato_item_lista_detalles_pedido"
+                android:layout_weight="2"
+                android:textAlignment="textEnd"
+                android:paddingEnd="10dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_detalles_pedido"
+            android:layout_below="@id/linear_layout_cabecera_detalles_pedido"
+            android:layout_alignParentStart="true">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_abajo_detalles"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/content_toolbar_detalles_pedido_bottom"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/toolbar_abajo_detalles"
+        app:srcCompat="@drawable/add"
+        app:backgroundTint="@color/verde_claro"
+        app:layout_anchorGravity="top|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

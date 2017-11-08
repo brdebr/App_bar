@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp"
+    android:background="@color/gris_oscuro">
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/img_notificacion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:padding="4dp"
+        android:background="@drawable/caja_texto_cuadrada"/>
+    <TextView
+        android:textSize="13dp"
+        android:textColor="@color/blanco"
+        android:text="Conectado como : Bryanss"
+        android:id="@+id/txt_fila1_notificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_notificacion"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:textSize="13dp"
+        android:textColor="@color/blanco"
+        android:text="- Pedidos activos : 5 \n- Platos listos : 44 "
+        android:id="@+id/txt_fila2_notificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_notificacion"
+        android:layout_below="@id/txt_fila1_notificacion"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_notificacion"
+        android:src="@drawable/logout64"
+        android:background="@drawable/caja_texto_cuadrada"
+        android:scaleType="centerCrop" />
+</RelativeLayout>
