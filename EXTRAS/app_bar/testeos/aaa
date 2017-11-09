@@ -1,0 +1,19 @@
+declare estado_def TINYINT(1);
+    declare ais_beb_o_prep TINYINT(1);
+	declare precio_prod DECIMAL(4,2);
+    declare platoid INT;
+    
+    select precio from
+    app_bar.platos where idplato=new.id_plato into precio_prod;
+	set new.precio = precio_prod*new.cantidad;
+    
+    select is_beb_o_prep from
+    app_bar.platos where idplato=new.id_plato into ais_beb_o_prep;
+	set new.is_beb_o_prep = ais_beb_o_prep;
+    
+    select is_beb_o_prep from
+    app_bar.platos where idplato=new.id_plato into estado_def;
+    
+    if estado_def = 2 then
+		set new.estado = 1;
+    end if;
